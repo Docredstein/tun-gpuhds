@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "name": "Linux Modules",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/../linux/include",
+        "${workspaceFolder}/../linux/arch/x86/include",
+        "${workspaceFolder}/../linux/arch/x86/include/generated",
+        "${workspaceFolder}/../linux/include/uapi",
+        "${workspaceFolder}/../linux/arch/x86/include/uapi"
+      ],
+      "forcedInclude": [
+        "${workspaceFolder}/../linux/include/generated/autoconf.h"
+      ],
+      "defines": [
+        "__KERNEL__",
+        "LINUX",
+        "MODULE",
+        "__rcu=",
+        "__user=",
+        "__kernel=",
+        "__force=",
+        "__iomem=",
+        "__must_check=",
+        "__asmlinkage="
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+
+      "dotConfig": "${workspaceFolder}/../linux/.config",
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}
